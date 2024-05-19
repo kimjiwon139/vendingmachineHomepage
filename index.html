@@ -22,7 +22,7 @@
 
     <script>
         function sendCommand(value) {
-            fetch(`http://192.168.56.101/${value}`)  // 아두이노의 실제 IP 주소로 대체해야 합니다.
+            fetch(`http://192.168.95.1/${value}`)  // 아두이노의 실제 IP 주소로 대체해야 합니다.
                 .then(response => response.text())
                 .then(data => console.log(data))
                 .catch(error => console.error('Error:', error));
